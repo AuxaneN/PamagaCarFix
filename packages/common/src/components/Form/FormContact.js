@@ -50,17 +50,25 @@ export const FormContact = (props) => (
           },
           body: JSON.stringify(values)
         }).then((res) => {
-          res.status === 200 ? console.log('submitted: true ') : console.log(res.status);
           const formContainer = document.querySelector('#' + props.id + ' .formContainer');
           const form = document.querySelector('#' + props.id);
+          let markup;
           const btn = document.querySelector('button');
           btn.setAttribute('disabled', 'disabled');
-          const markup = `
+          if(res.status === 200){
+          markup = `
           <div>
             <h2>Votre message à bien été envoyé !</h2>
             <p>Nous mettons tout en oeuvre pour vous répondre dans les plus brefs délais.</p>
           </div>
-          `
+          `} else {
+            markup = `
+            <div>
+              <h2>Une erreur est survenue</h2>
+              <p>Nous vous invitons à essayer ultérieurement.</p>
+            </div>`
+          }
+
           form.reset();
           formContainer.innerHTML = ' ';
           form.removeChild(form.childNodes[1]);

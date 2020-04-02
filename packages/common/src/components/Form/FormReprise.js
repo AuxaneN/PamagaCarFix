@@ -92,12 +92,20 @@ export const FormReprise = (props) => (
           const form = document.querySelector('#reprise1');
           const btn = document.querySelector('button');
           btn.classList.add('disabled');
-          const markup = `
-          <div>
-            <h2>Le formulaire à bien été envoyé!</h2>
-            <p>Nous mettons tout en oeuvre pour vous répondre dans les plus brefs délais.</p>
-          </div>
-          `
+          let markup;
+          if(res.status === 200){
+            markup = `
+            <div>
+              <h2>Votre message à bien été envoyé !</h2>
+              <p>Nous mettons tout en oeuvre pour vous répondre dans les plus brefs délais.</p>
+            </div>
+            `} else {
+              markup = `
+              <div>
+                <h2>Une erreur est survenue</h2>
+                <p>Nous vous invitons à essayer ultérieurement.</p>
+              </div>`
+            }
           const button = `
           <a href="/nos-offres">
             <button type="button"/>
