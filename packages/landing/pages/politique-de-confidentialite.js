@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-import { saasTheme } from '../../../common/src/theme/saas';
+import { saasTheme } from '../../common/src/theme/saas';
 import { ResetCSS } from '../../common/src/assets/css/style.js';
 import { GlobalStyle, ContentWrapper } from '../containers/Saas/saas.style';
 import Navbar from '../containers/Saas/Navbar';
