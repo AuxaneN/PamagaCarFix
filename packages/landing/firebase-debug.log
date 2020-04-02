@@ -1,0 +1,21 @@
+[debug] [2020-04-02T16:56:28.430Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T16:56:28.435Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Cell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-04-02T16:56:28.435Z] CLI Version:   8.0.0
+[debug] [2020-04-02T16:56:28.436Z] Platform:      win32
+[debug] [2020-04-02T16:56:28.436Z] Node Version:  v12.13.0
+[debug] [2020-04-02T16:56:28.439Z] Time:          Thu Apr 02 2020 12:56:28 GMT-0400 (GMT-04:00)
+[debug] [2020-04-02T16:56:28.439Z] ----------------------------------------------------------------------
+[debug] [2020-04-02T16:56:28.439Z] 
+[debug] [2020-04-02T16:56:28.456Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-02T16:56:28.457Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Cell\Documents\Work\Oneo\PamagaCar\SitePamaga\packages\landing
+

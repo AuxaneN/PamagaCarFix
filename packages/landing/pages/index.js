@@ -1,0 +1,61 @@
+import React, { Fragment } from 'react';
+import Head from 'next/head';
+import Sticky from 'react-stickynode';
+import { ThemeProvider } from 'styled-components';
+import { saasTheme } from '../../common/src/theme/saas';
+import { ResetCSS } from '../../common/src/assets/css/style.js';
+import { GlobalStyle, ContentWrapper } from '../containers/Saas/saas.style';
+import Navbar from '../containers/Saas/Navbar';
+import BannerSection from '../containers/Saas/BannerSection';
+import FeatureSection from '../containers/Saas/FeatureSection';
+import VisitorSection from '../containers/Saas/VisitorSection';
+import Footer from '../containers/Saas/Footer';
+import TimelineSection from '../containers/Saas/TimelineSection';
+import {FormContact} from '../../common/src/components/Form/FormContact';
+
+
+import Contact from '../containers/Saas/Contact/index';
+import { DrawerProvider } from '../../common/src/contexts/DrawerContext';
+//SELF ADDED
+import BlogSection from '../containers/Saas/BlogSection';
+import Skill from '../containers/Saas/Skill';
+import WorkHistory from '../containers/Saas/WorkHistory';
+import {FullWidthImage} from '../containers/Saas/FullWidthImage/FullWidthImage';
+
+
+export default () => {
+  return (
+    <ThemeProvider theme={saasTheme}>
+      <Fragment>
+        <Head>
+          <title>Pamaga Car</title>
+          <meta name="Description" content="Votre mandataire automobile" />
+          <meta name="theme-color" content="#ec5555" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+            rel="stylesheet"
+          />
+        </Head>
+        <ResetCSS />
+        <GlobalStyle />
+        <ContentWrapper>
+          <Sticky top={0} innerZ={49} activeClass="sticky-nav-active">
+            <DrawerProvider>
+              <Navbar />
+            </DrawerProvider>
+          </Sticky>
+          <BannerSection />
+          <FeatureSection />
+          <BlogSection />
+          <FullWidthImage/>
+          <Skill />
+          <WorkHistory />
+          <VisitorSection />
+          <TimelineSection />
+          <FormContact id="contact" />
+          <Footer />
+        </ContentWrapper>
+      </Fragment>
+    </ThemeProvider>
+  );
+};
