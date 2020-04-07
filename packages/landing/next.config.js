@@ -36,7 +36,6 @@ module.exports = withPlugins(
     withCSS,
   ],
   {
-    // distDir: '../../dist/functions/next',
-    distDir: 'build'
+    distDir: '../../dist/functions/next',
   }
 );
