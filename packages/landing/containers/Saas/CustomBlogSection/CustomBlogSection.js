@@ -52,7 +52,7 @@ export class CustomBlogSection extends Component{
           this.state.articles.map(article => (
             <Fade bottom key={article.id}>
               <Box className="blogArticle" >
-                <img src={`/images/blogHeader/${article.imageUrl}`} alt={article.titre}/>
+                <img src={require(`../../../../common/src/assets/image/saas/blogHeader/${article.imageUrl}?original`)} alt={article.titre}/>
                 <h2>{article.titre}</h2>
                 <p className="date">{article.date}</p>
                 <p>{article.article}</p>

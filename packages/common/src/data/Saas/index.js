@@ -6,12 +6,12 @@ import BlogImage3 from '../../assets/image/saas/blog-img/RenaultMegane_SansNom_B
 import BlogImage4 from '../../assets/image/saas/blog-img/RenaultCaptur_SansNom_Blanc.png';
 
 
-import Image1 from '../../assets/image/saas/carouselImg/Peugeot_208_Tech_Edition.png';
-import Image2 from '../../assets/image/saas/carouselImg/citroen-c3.png';
-import Image3 from '../../assets/image/saas/carouselImg/renault-clio.png';
-import Image4 from '../../assets/image/saas/carouselImg/peugeot-3008.png';
-import Image5 from '../../assets/image/saas/carouselImg/dacia-sandero.png';
-import Image6 from '../../assets/image/saas/carouselImg/renaultcaptur_flipped.png';
+// import Image1 from '../../assets/image/saas/carouselImg/Peugeot_208_Tech_Edition.png';
+// import Image2 from '../../assets/image/saas/carouselImg/citroen-c3.png';
+// import Image3 from '../../assets/image/saas/carouselImg/renault-clio.png';
+// import Image4 from '../../assets/image/saas/carouselImg/peugeot-3008.png';
+// import Image5 from '../../assets/image/saas/carouselImg/dacia-sandero.png';
+// import Image6 from '../../assets/image/saas/carouselImg/renaultcaptur_flipped.png';
 
 export const ARTICLE_BLOG = [
   {
@@ -35,44 +35,44 @@ export const ARTICLE_BLOG = [
 
 ];
 
-export const CAROUSEL_SLIDES = [
-        { image:Image1,
-          marque:"Peugeot 208 1.2",
-          modele:"PureTech 110ch E6.c",
-          sousmodele:"Allure 5p",
-          prix:"13 290€",
-          },
-        { image:Image2,
-          marque:"Citroën C3",
-          modele:"PureTech 83ch Feel",
-          sousmodele:"S&S E6.d",
-          prix:"10 990€",
+// export const CAROUSEL_SLIDES = [
+//         { image:Image1,
+//           marque:"Peugeot 208 1.2",
+//           modele:"PureTech 110ch E6.c",
+//           sousmodele:"Allure 5p",
+//           prix:"13 290€",
+//           },
+//         { image:Image2,
+//           marque:"Citroën C3",
+//           modele:"PureTech 83ch Feel",
+//           sousmodele:"S&S E6.d",
+//           prix:"10 990€",
           
-          },
-        { image:Image3,
-          marque:"Renault Clio 0.9 TCe",
-          modele:"90ch energy Intens 5p Euro6c",
-          sousmodele:"Allure 5p",
-          prix:"12 790€",
+//           },
+//         { image:Image3,
+//           marque:"Renault Clio 0.9 TCe",
+//           modele:"90ch energy Intens 5p Euro6c",
+//           sousmodele:"Allure 5p",
+//           prix:"12 790€",
           
-          },
-        { image:Image4,
-          marque:"Peugeot 3008 1.2",
-          modele:"PureTech 130ch GT Line",
-          sousmodele:"S&S 113g",
-          prix:"25 990€",
-          },
-        { image:Image5,
-          marque:"Dacia Sandero 0.9",
-          modele:"TCe 90ch Stepway - 18",
-          prix:"11 990€",
-          },
-        { image:Image6,
-          marque:"Renault Captur 1,3",
-          modele:"TCe 150ch FAP Intens EDC",
-          prix:"16 990€",
-          },
-]
+//           },
+//         { image:Image4,
+//           marque:"Peugeot 3008 1.2",
+//           modele:"PureTech 130ch GT Line",
+//           sousmodele:"S&S 113g",
+//           prix:"25 990€",
+//           },
+//         { image:Image5,
+//           marque:"Dacia Sandero 0.9",
+//           modele:"TCe 90ch Stepway - 18",
+//           prix:"11 990€",
+//           },
+//         { image:Image6,
+//           marque:"Renault Captur 1,3",
+//           modele:"TCe 150ch FAP Intens EDC",
+//           prix:"16 990€",
+//           },
+// ]
 
 export const BLOG = [
   {

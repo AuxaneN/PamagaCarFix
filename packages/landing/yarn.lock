@@ -5401,7 +5401,7 @@ email-templates@^7.0.4:
   integrity sha512-+s8Eav1XCF6IveHXK4lWxXdMm3XCk9eDIMX0p9simqIPW1gzR4haMpNhID2pZBQzDyY0yylW74IMB9+3Ntwjmw==
   dependencies:
     "@ladjs/i18n" "^3.0.4"
-    "@sindresorhus/is" "^2.1.0"
+    "@sindresorhus/is" "^0.7.0"
     consolidate "^0.15.1"
     debug "^4.1.1"
     get-paths "^0.0.7"

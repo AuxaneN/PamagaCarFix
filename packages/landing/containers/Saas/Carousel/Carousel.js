@@ -66,7 +66,7 @@ export class CarCarousel extends React.Component {
         slides={this.state.carouselSlide.map( item => (
           <CarouselSlide
             key={item.id}
-            image={`/images/carouselImg/` + item.image}
+            image={require(`../../../../common/src/assets/image/saas/carouselImg/${item.image}?original`)}
             marque={item.marque}
             version={item.version}
             sousversion={item.sousversion}
