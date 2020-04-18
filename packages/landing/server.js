@@ -1,6 +1,8 @@
 const express = require('express')
 const next = require('next')
 const bodyParser = require('body-parser')
+var request = require('request');
+var path = require('path');
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -11,9 +13,16 @@ const mailerDevis = require('./mailers/mailerDevis');
 const mailerReprise = require('./mailers/mailerReprise');
 
 app.prepare().then(() => {
-  const server = express()
+  const server = express();
 
-  server.use(bodyParser.json())
+  server.use(bodyParser.json());
+  server.use(express.static('public'));
+  server.use(
+    '/public',
+    express.static(__dirname + '/public', {
+      maxAge: '365d'
+    })
+  );
 
   server.post('/api/contact', (req, res) => {
     const { email = '', nom = '', message = '', tel = '' } = req.body
@@ -101,10 +110,9 @@ app.prepare().then(() => {
   server.get('*', (req, res) => {
     return handle(req, res)
   })
-  var server_port =  process.env.PORT || 80;
-  var server_host = process.env.HOST || '0.0.0.0';
-  server.listen(server_port, server_host, (err) => {
+
+  server.listen(3000, (err) => {
     if (err) throw err
-    console.log(`> Read on http://localhost:${server_port}`)
-  })
-})
+    console.log(`> Read on http://localhost:3000`)
+  });
+});

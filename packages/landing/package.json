@@ -6,9 +6,9 @@
     "node": "10"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "export": "next build && next export",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
@@ -52,9 +52,7 @@
     "react-stickynode": "^2.1.1",
     "styled-components": "^5.0.0",
     "styled-system": "4.1.0",
-    "swiper": "^5.1.0"
-  },
-  "devDependencies": {
+    "swiper": "^5.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "docz": "^0.13.7",
     "dotenv": "^8.2.0",
